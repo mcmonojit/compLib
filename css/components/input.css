@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+:root{
+    --darkBlack: #000;
+    --checkError: #991b1b;
+    --checkWarning: #d97706;
+    --checkSuccess: #15803d;
+}
+
+.input-primary{
+    margin: 0.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.input-primary label{
+    display: block;
+    font-size: 14px;
+    margin: 0.2rem 0.2rem 0.2rem 0.25rem;
+}
+
+.input-primary input{
+    padding: 0.4rem;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid var(--darkBlack);
+    border-radius: 0.3rem;
+}
+
+.input-primary input:focus{
+    outline: none;
+}
+
+.input-primary span{
+    display: block;
+    margin: 0.2rem 0.2rem 0.2rem 0.25rem;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.check-success{
+    color: var(--checkSuccess);
+}
+
+.check-warning{
+    color: var(--checkWarning);
+}
+
+.check-error{
+    color: var(--checkError);
+}
+
+.textbox-primary{
+    margin: 0.5rem;
+    max-width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.textbox-primary label{
+    display: block;
+    margin: 0.2rem 0.2rem 0.2rem 0.25rem;
+}
+
+.textbox-primary textarea{
+    padding: 0.4rem;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid var(--darkBlack);
+    border-radius: 0.3rem;
+    max-width: 100%;
+}

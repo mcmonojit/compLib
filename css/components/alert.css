@@ -1,0 +1,85 @@
+:root{
+    --error: #fee2e2;
+    --errorfont: #5A0000; 
+    --warning: #fef3c7;
+    --warningfont: #78350f;
+    --info: #e0f2fe;
+    --infofont: #0c4a6e;
+    --success: #ecfccb;
+    --successfont: #365314;
+    --lightOrange: #fdba74;
+}
+
+.alert{
+    padding: 0.75rem 2.5rem;
+    border-radius: 0.35rem;
+}
+
+.alert h4{
+    margin: 0;
+    display: inline;
+}
+
+.alert p{
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+.error{
+    color: var(--errorfont);
+    background-color: var(--error);
+}
+
+.warning {
+    color: var(--warningfont);
+    background-color: var(--warning);
+}
+
+.success {
+    color: var(--successfont);
+    background-color: var(--success);
+}
+
+.info {
+    color: var(--infofont);
+    background-color: var(--info);
+}
+
+.close-btn{
+    border: none;
+    background-color: var(--warning);
+    color: var(--warningfont);
+    border-radius: 5rem;
+    padding: 6px 7.5px 4px 7.5px;
+    position: relative;
+    top:0;
+    right: 0;
+}
+
+.alertClose{
+    padding: 0.75rem 0.5rem 0.75rem 2.5rem;
+    border-radius: 0.35rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.alertClose h4{
+    margin: 0;
+}
+
+.alertClose p{
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+.close-btn:hover{
+    background-color: var(--lightOrange);
+    cursor: pointer;
+}
+
+.close-btn:active{
+    background-color: var(--warningfont);
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,15 @@
+
+@import url(../docs.css);
+@import url(/css/allcomponent.css);
+
+.comp-container-width1{
+    max-width: 35rem;
+}
+
+.code-snip-width{
+    max-width: 50rem;
+}
+
+.component-container .alert{
+    margin: 10px;
+}

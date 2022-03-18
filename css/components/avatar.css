@@ -1,0 +1,68 @@
+:root{
+    --waterBlue: #003566;
+    --veryLightGray: #cbd5e1;
+}
+
+.avatar{
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.avtr-ch-large {
+    background-color: var(--waterBlue);
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    padding: 1.75rem;
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 50%;
+}
+
+.avtr-ch-medium{
+    background-color: var(--waterBlue);
+    text-align: center;
+    color: white;
+    font-size: 2.2rem;
+    padding: 1rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.avtr-ch-small{
+    background-color: var(--waterBlue);
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.av-icon{
+    background-color: var(--veryLightGray);
+    padding: 0.885rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.avtr-large {
+    height: 9rem;
+    width: 9rem;
+}
+
+.avtr-medium {
+    height: 6.5rem;
+    width: 6.5rem;
+}
+  
+.avtr-small {
+    height: 3.5rem;
+    width: 3.5rem;
+}

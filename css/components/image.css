@@ -1,0 +1,19 @@
+
+.responsive-img{
+    max-width: 100%;
+    max-height: auto;
+
+}
+
+.circular-img{
+    height: 14rem;
+    width: 14rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+    .sidebar{
+        display: none;
+    }
+}
