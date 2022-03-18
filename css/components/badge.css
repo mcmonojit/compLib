@@ -1,10 +1,4 @@
-:root{
-    --onlineGreen: #365314;
-    --offlineRed: #ef4444;
-    --white: #ffffff;
-    --text-color: #f5f5f5;
-    --notification: #581c87;
-}
+@import url(../colorVariables.css);
 
 .badge-container{
     position: relative;

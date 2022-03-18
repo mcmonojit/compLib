@@ -1,7 +1,4 @@
-:root{
-    --waterBlue: #003566;
-    --veryLightGray: #cbd5e1;
-}
+@import url(../colorVariables.css);
 
 .avatar{
     height: 8rem;

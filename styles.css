@@ -6,22 +6,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+
+@import url(./css/colorVariables.css);
+
 * {
     box-sizing: border-box;
 }
 
 a{
     text-decoration: none;
-}
-
-:root {
-    --navyBlue: #082032;
-    --waterBlue: #003566;
-    --offWhite: #F5F3FF;
-    --violet: #701a75;
-    --turquoise: #67e8f9;
-    --gray: #9ca3af;
-    --veryLightGray: #cbd5e1;
 }
 
 body{

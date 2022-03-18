@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 
-:root{
-    --darkBlack: #000;
-    --checkError: #991b1b;
-    --checkWarning: #d97706;
-    --checkSuccess: #15803d;
-}
+@import url(../colorVariables.css);
 
 .input-primary{
     margin: 0.5rem;

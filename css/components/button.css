@@ -1,17 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 
-:root{
-    --lightBlack: #303030;
-    --darkBlack: #000;
-    --white: #fff;
-    --offWhite: #F5F3FF;
-    --navyBlue: #082032;
-    --waterBlue: #003566;
-    --lightWaterBlue: #194975;
-    --lightShadeOfGrey: #e5e5e5;
-    --gray: #9ca3af;
-}
+@import url(../colorVariables.css);
 
 .btn {
     font-family: "Poppins", sans-serif;
