@@ -1,0 +1,63 @@
+@import url(../colorVariables.css);
+
+.navbar-container{
+    background-color: var(--offWhite);
+    box-shadow: 2px 2px 12px -4px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+}
+
+.navbar{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.navbar-brand-name{
+    margin: auto 0.75rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-image: linear-gradient(90deg, var(--violet), var(--turquoise));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.nav-list{
+    display: inline;
+    list-style: none;
+    letter-spacing: 2px;
+}
+
+.nav-item{
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+.nav-link{
+    text-decoration: none;
+    text-align: center;
+    color: var(--violet);
+    font-weight: bolder;
+}
+
+
+.navbar-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-list{
+    display: flex;
+    justify-content: flex-end;
+    letter-spacing: 2px;
+}
+
+.navbar-list-item{
+    margin: 0rem 0.5rem;
+}
