@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@import url(../colorVariables.css);
+
+@import url(../utils.css);
+
+.card-1{
+    font-family: 'Poppins', sans-serif;
+    max-height: fit-content;
+    max-width: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+    transition: transform 0.4s;
+    background-color: var(--white);
+}
+
+.card-info-container{
+   padding: 0.5rem;
+}
+
+.card-info-side{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-info-side h2{
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin: 0rem;
+}
+
+.card-info-side p{
+    font-size: 0.8rem;
+    margin: 0.2rem;
+}
+
+.card-info-container span{
+    font-size: 0.97rem;
+    font-weight: 600;
+}
+
+.card-info-container button{
+    margin-top: 0.4rem;
+}
+
+.card-info-container .info-big{
+    font-size: 0.9rem;
+}
+
+.time{
+    background-color: var(--offWhite);
+    padding: 3px 4px;
+    border-radius: 0.3rem;
+    font-weight: 600;
+}
+
+.card-1:hover{
+    transform: scale(0.97);
+}
+
+.card-1-img{
+    max-width: 17rem;
+    max-height: 17rem;
+    border-radius: 0.7rem;
+    position: relative;
+}
+
+.card-1-overlay-text{
+    border-radius: 0.7rem;
+    color: var(--white);
+    bottom: 36.9%;
+    width: 100%;
+    position: absolute;
+    padding-left: 1rem;
+    padding-bottom: 0.8rem;
+    background-image: linear-gradient(to top, black, transparent);
+}
+
+.card-overlay-badge{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
+.card-overlay-badge button{
+    height: 2rem;
+    width: 2rem;
+}
+
+
+.card-1-overlay-text h4{
+    margin-bottom: 0rem;
+    font-weight: 500;
+}
+
+.card-1-overlay-text a{
+    color: inherit;
+}
+
+.text-card{
+    font-family: 'Poppins', sans-serif;
+    max-height: fit-content;
+    width: 16rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+    transition: transform 0.4s;
+    background-color: var(--white);
+}
+
+.horizontal-card{
+    font-family: 'Poppins', sans-serif;
+    max-height: fit-content;
+    width: fit-content;
+    position: relative;
+    display: flex;
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+    transition: transform 0.4s;
+    background-color: var(--white);
+}
+
+.horizontal-card .card-1-overlay-text{
+    max-width: 17rem;
+    bottom: 0%;
+}
+
+.horizontal-card .card-info-container{
+    margin: auto;
+}
+
+.card-4{
+    font-family: 'Poppins', sans-serif;
+    max-height: 22rem;
+    max-width: 16rem;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    transition: transform 0.4s;
+}
+
+.card-4:hover{
+    transform: scale(0.97);
+}
+
+.card-4-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.card-4-overlay-text{
+    border-radius: 0.5rem;
+    color: var(--white);
+    width: 100%;
+    position: absolute;
+    padding-left: 1rem;
+    padding-bottom: 0.8rem;
+    background-image: linear-gradient(to top, black, transparent);
+}
+
+.card-4-overlay-text h4{
+    margin-bottom: 0rem;
+    font-weight: 500;
+}
+
+.card-4-overlay-text a{
+    color: inherit;
+}
