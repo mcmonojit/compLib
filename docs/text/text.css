@@ -1,7 +1,6 @@
-
 @import url(../docs.css);
 @import url(/css/allcomponent.css);
 
-.component-container .alert{
-    margin: 10px;
+.component-container{
+    flex-direction: column;
 }

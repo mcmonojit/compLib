@@ -4,6 +4,8 @@
 
 @import url(../colorVariables.css);
 
+@import url(../utils.css);
+
 * {
     box-sizing: border-box;
 }

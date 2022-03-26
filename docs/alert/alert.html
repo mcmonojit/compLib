@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alert | CoolWaterUI" />
+    <meta name="author" content="Monojit Chakraborty"/>
     <title>CoolWaterUI</title>
     <link rel="stylesheet" href="alert.css">
 </head>
@@ -27,28 +29,28 @@
                     <a class="sidebar-item" href="../badge/badge.html" rel="noopener noreferrer">Badge</a>
                 </li>
                 <li>
-                    <a class="sidebar-item" href="" rel="noopener noreferrer">Button</a>
+                    <a class="sidebar-item" href="../button/button.html" rel="noopener noreferrer">Button</a>
                 </li>
                 <li>
-                    <a class="sidebar-item" href="" rel="noopener noreferrer">Card</a>
+                    <a class="sidebar-item" href="../card/card.html" rel="noopener noreferrer">Card</a>
                 </li>
                 <li>
-                    <a class="sidebar-item" href="" rel="noopener noreferrer">Image</a>
+                    <a class="sidebar-item" href="../image/image.html" rel="noopener noreferrer">Image</a>
                 </li>
                 <li>
-                    <a class="sidebar-item" href="" rel="noopener noreferrer">Input</a>
+                    <a class="sidebar-item" href="../input/input.html" rel="noopener noreferrer">Input</a>
                 </li>
                 <li>
-                    <a class="sidebar-item" href="" rel="noopener noreferrer">Toast</a>
+                    <a class="sidebar-item" href="../list/list.html" rel="noopener noreferrer">List</a>
                 </li>
                 <li>
-                    <a class="sidebar-item" href="" rel="noopener noreferrer">Text</a>
+                    <a class="sidebar-item" href="../navigation/navigation.html" rel="noopener noreferrer">Navigation</a>
                 </li>
                 <li>
-                    <a class="sidebar-item" href="" rel="noopener noreferrer">Slider</a>
+                    <a class="sidebar-item" href="../rating/rating.html" rel="noopener noreferrer">Rating</a>
                 </li>
                 <li>
-                    <a class="sidebar-item" href="" rel="noopener noreferrer">List</a>
+                    <a class="sidebar-item" href="../text/text.html" rel="noopener noreferrer">Text</a>
                 </li>
             </ul>
         </aside>
@@ -62,7 +64,7 @@
                 <h3>Basic alert</h3>
                 <p>The alert offers four severity levels that set a distinctive icon and color.</p>
 
-                <div class="component-container comp-container-width1">
+                <div class="component-container">
                     <div>
                         <div class="alert error">
                             <h4>Error</h4>
@@ -96,10 +98,10 @@
 
                 <p>The following code snippet contains the code for the above components.</p>
 
-                <div class="component-container code-snip-width">
+                <div class="component-container">
                     <iframe
                         src="https://carbon.now.sh/embed/XzL2a8uzPBjenZ9ywF3S"
-                        style="width: 45rem; height: 47rem; border:0; transform: scale(1); overflow:auto;"
+                        style="width: 47rem; height: 47rem; border:0; transform: scale(1); overflow:auto;"
                         sandbox="allow-scripts allow-same-origin">
                     </iframe>
                 </div>
@@ -107,7 +109,7 @@
                 <h3>Alert with actions</h3>
                 <p>An alert can have an action, such as a close or undo button. It is rendered after the message, at the end of the alert.</p>
 
-                <div class="component-container comp-container-width1">
+                <div class="component-container">
                     <div class="alertClose warning">
                         <div>
                             <h4>Warning</h4>
@@ -116,14 +118,19 @@
                             </p>
                         </div>
                         <div>
-                            <button class="close-btn">X</button>
+                            <button class="btn btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                                    <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
 
                 <p>The following code snippet contains the code for the above components.</p>
 
-                <div class="component-container code-snip-width">
+                <div class="component-container">
                     <iframe
                         src="https://carbon.now.sh/embed/36HFNb2EPtXNr5ECuQtu"
                         style="width: 45rem; height: 26rem; border:0; transform: scale(1); overflow:hidden;"

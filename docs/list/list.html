@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Input | CoolWaterUI" />
+    <meta name="description" content="List | CoolWaterUI" />
     <meta name="author" content="Monojit Chakraborty"/>
     <title>CoolWaterUI</title>
-    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="list.css">
 </head>
 <body>
     <div class="sidebar-and-main-container">
@@ -38,10 +38,10 @@
                     <a class="sidebar-item" href="../image/image.html" rel="noopener noreferrer">Image</a>
                 </li>
                 <li>
-                    <a class="sidebar-item  link-active" href="../input/input.html" rel="noopener noreferrer">Input</a>
+                    <a class="sidebar-item" href="../input/input.html" rel="noopener noreferrer">Input</a>
                 </li>
                 <li>
-                    <a class="sidebar-item" href="../list/list.html" rel="noopener noreferrer">List</a>
+                    <a class="sidebar-item link-active" href="../list/list.html" rel="noopener noreferrer">List</a>
                 </li>
                 <li>
                     <a class="sidebar-item" href="../navigation/navigation.html" rel="noopener noreferrer">Navigation</a>
@@ -58,82 +58,57 @@
 
             <div class="main-content">
 
-                <h1>Input</h1>
-                <p>Input components are highly important for any application as they are used to obtain data from user.</p>
+                <h1>List</h1>
+                <p>List component can be used to display a number of items having same category.</p>
 
-                <h3>Primary Input</h3>
-                <p>This is a basic input with label.</p>
-
-                <div class="component-container">
-                    <div class="input-primary">
-                        <label>Name</label>
-                        <input type="text" placeholder="Enter your name" />
-                    </div>
-                </div>
-
-                <p>The following code snippet contains the code for the above components.</p>
-
-                <div class="component-container code-snip-width">
-                    <iframe
-                        src="https://carbon.now.sh/embed/ayH9ZJhqakBhhVqcWdK7"
-                        style="width: 614px; height: 261px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-
-                <h3>Input with validity check</h3>
-                <p>This component is widely used to check and validify. The consequent message is shown as an alert</p>
-
-                <div class="component-container comp-container-width1">
-                    <div>
-                        <div class="input-primary margin-1rem">
-                            <label>Enter a strong password</label>
-                            <input type="text" placeholder="Enter password" />
-                            <span class="check-success">It is a strong password</span>
-                        </div>
-
-                        <div class="input-primary margin-1rem">
-                            <label>Enter a strong password</label>
-                            <input type="text" placeholder="Enter password" />
-                            <span class="check-warning">It is a weak password!</span>
-                        </div>
-
-                        <div class="input-primary margin-1rem">
-                            <label>Enter correct password</label>
-                            <input type="text" placeholder="Enter password" />
-                            <span class="check-error">Incorrect password!</span>
-                        </div>
-                    </div>
-                </div>
-
-                <p>The following code snippet contains the code for the above components.</p>
-
-                <div class="component-container code-snip-width">
-                    <iframe
-                        src="https://carbon.now.sh/embed/kh6r03h4o4b0CfwlUyQk"
-                        style="width: 820px; height: 503px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-
-                <h3>Primary Textbox</h3>
-                <p>This is a basic Textbox with label.</p>
+                <h3>Spaced list</h3>
+                <p>These is a horizontal list.</p>
 
                 <div class="component-container">
-                    <div class="textbox-primary">
-                        <label>Name</label>
-                        <textarea rows="4" cols="40" placeholder="Enter text here"></textarea>
-                    </div>
+
+                    <ul class="list-spaced">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                        <li>Item 5</li>
+                    </ul>
+
                 </div>
 
                 <p>The following code snippet contains the code for the above components.</p>
 
                 <div class="component-container code-snip-width">
                     <iframe
-                        src="https://carbon.now.sh/embed/xncuRHMMfQJn8H2qyM8S"
-                        style="width: 614px; height: 279px; border:0; transform: scale(1); overflow:hidden;"
+                        src="https://carbon.now.sh/embed/lXVYrdKsWRhZvw2f7nXi"
+                        style="width: 353px; height: 316px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                        </iframe>
+                </div>
+
+                <h3>Stacked list</h3>
+                <p>This is a stacked list.</p>
+
+                <div class="component-container">
+                    
+                    <ul class="list-stacked">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                        <li>Item 5</li>
+                    </ul>
+
+                </div>
+
+                <p>The following code snippet contains the code for the above components.</p>
+
+                <div class="component-container code-snip-width">
+                    <iframe
+                        src="https://carbon.now.sh/embed/H3iyvOWI7M0oxg5dpREF"
+                        style="width: 900px; height: 316px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                        </iframe>
                 </div>
 
             </div>

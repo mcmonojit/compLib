@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Input | CoolWaterUI" />
+    <meta name="description" content="Text | CoolWaterUI" />
     <meta name="author" content="Monojit Chakraborty"/>
     <title>CoolWaterUI</title>
-    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="text.css">
 </head>
 <body>
     <div class="sidebar-and-main-container">
@@ -38,7 +38,7 @@
                     <a class="sidebar-item" href="../image/image.html" rel="noopener noreferrer">Image</a>
                 </li>
                 <li>
-                    <a class="sidebar-item  link-active" href="../input/input.html" rel="noopener noreferrer">Input</a>
+                    <a class="sidebar-item" href="../input/input.html" rel="noopener noreferrer">Input</a>
                 </li>
                 <li>
                     <a class="sidebar-item" href="../list/list.html" rel="noopener noreferrer">List</a>
@@ -50,7 +50,7 @@
                     <a class="sidebar-item" href="../rating/rating.html" rel="noopener noreferrer">Rating</a>
                 </li>
                 <li>
-                    <a class="sidebar-item" href="../text/text.html" rel="noopener noreferrer">Text</a>
+                    <a class="sidebar-item link-active" href="../text/text.html" rel="noopener noreferrer">Text</a>
                 </li>
             </ul>
         </aside>
@@ -58,82 +58,98 @@
 
             <div class="main-content">
 
-                <h1>Input</h1>
-                <p>Input components are highly important for any application as they are used to obtain data from user.</p>
+                <h1>Text</h1>
+                <p>Text components occupy a big bulk of the UI. Different sizes of texts help to direct the attention of the user and importance of a content.</p>
 
-                <h3>Primary Input</h3>
-                <p>This is a basic input with label.</p>
-
-                <div class="component-container">
-                    <div class="input-primary">
-                        <label>Name</label>
-                        <input type="text" placeholder="Enter your name" />
-                    </div>
-                </div>
-
-                <p>The following code snippet contains the code for the above components.</p>
-
-                <div class="component-container code-snip-width">
-                    <iframe
-                        src="https://carbon.now.sh/embed/ayH9ZJhqakBhhVqcWdK7"
-                        style="width: 614px; height: 261px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-
-                <h3>Input with validity check</h3>
-                <p>This component is widely used to check and validify. The consequent message is shown as an alert</p>
-
-                <div class="component-container comp-container-width1">
-                    <div>
-                        <div class="input-primary margin-1rem">
-                            <label>Enter a strong password</label>
-                            <input type="text" placeholder="Enter password" />
-                            <span class="check-success">It is a strong password</span>
-                        </div>
-
-                        <div class="input-primary margin-1rem">
-                            <label>Enter a strong password</label>
-                            <input type="text" placeholder="Enter password" />
-                            <span class="check-warning">It is a weak password!</span>
-                        </div>
-
-                        <div class="input-primary margin-1rem">
-                            <label>Enter correct password</label>
-                            <input type="text" placeholder="Enter password" />
-                            <span class="check-error">Incorrect password!</span>
-                        </div>
-                    </div>
-                </div>
-
-                <p>The following code snippet contains the code for the above components.</p>
-
-                <div class="component-container code-snip-width">
-                    <iframe
-                        src="https://carbon.now.sh/embed/kh6r03h4o4b0CfwlUyQk"
-                        style="width: 820px; height: 503px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-
-                <h3>Primary Textbox</h3>
-                <p>This is a basic Textbox with label.</p>
+                <h3>Heading text</h3>
+                <p>These are basic heading text component.</p>
 
                 <div class="component-container">
-                    <div class="textbox-primary">
-                        <label>Name</label>
-                        <textarea rows="4" cols="40" placeholder="Enter text here"></textarea>
-                    </div>
+
+                    <h1>This is h1 Heading</h1>
+                    <h2>This is h2 Heading</h2>
+                    <h3>This is h3 Heading</h3>
+                    <h4>This is h4 Heading</h4>
+                    <h5>This is h5 Heading</h5>
+                    <h6>This is h6 Heading</h6>
+
                 </div>
 
                 <p>The following code snippet contains the code for the above components.</p>
 
                 <div class="component-container code-snip-width">
                     <iframe
-                        src="https://carbon.now.sh/embed/xncuRHMMfQJn8H2qyM8S"
-                        style="width: 614px; height: 279px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
+                    src="https://carbon.now.sh/embed/UjsFnFNUmJqGfN5AZ6kS"
+                    style="width: 378px; height: 316px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
                     </iframe>
+                </div>
+
+                <h3>Small text</h3>
+                <p>This is a small text.</p>
+
+                <div class="component-container">
+                    <p class="text-small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, expedita. Suscipit eum animi porro commodi excepturi sapiente consectetur expedita modi, recusandae provident, similique iusto, sequi assumenda adipisci amet quae nobis!</p>
+                </div>
+
+                <p>The following code snippet contains the code for the above components.</p>
+
+                <div class="component-container code-snip-width">
+                    <iframe
+                        src="https://carbon.now.sh/embed/2KvHp9GKz3LNDlHZRQu5"
+                        style="width: 833px; height: 261px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                </div>
+
+                <p>This is an extra small text.</p>
+
+                <div class="component-container">
+                    <p class="text-x-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt quas, tenetur dolorum corrupti minus rem repudiandae distinctio temporibus commodi quaerat nobis voluptatum necessitatibus quibusdam obcaecati sunt, recusandae reiciendis consequatur qui aliquid excepturi aut atque! Rem voluptatibus eius qui ad.</p>
+                </div>
+
+                <p>The following code snippet contains the code for the above components.</p>
+
+                <div class="component-container code-snip-width">
+                    <iframe
+                        src="https://carbon.now.sh/embed/2KvHp9GKz3LNDlHZRQu5"
+                        style="width: 833px; height: 261px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                </div>
+
+                <h3>Gray text</h3>
+                <p>This is a Gray text</p>
+
+                <div class="component-container">
+                    <p class="text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, eos.</p>
+                </div>
+
+                <p>The following code snippet contains the code for the above components.</p>
+
+                <div class="component-container code-snip-width">
+                    <iframe
+                        src="https://carbon.now.sh/embed/k3Ixt804FMKMiRxXKD99"
+                        style="width: 757px; height: 223px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                </div>
+
+                <h3>Center text</h3>
+                <p>This is a center text</p>
+
+                <div class="component-container">
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, eos.</p>
+                </div>
+
+                <p>The following code snippet contains the code for the above components.</p>
+
+                <div class="component-container code-snip-width">
+                    <iframe
+                        src="https://carbon.now.sh/embed/EsE7xqaALYG81yFUqlmL"
+                        style="width: 774px; height: 223px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                        </iframe>
                 </div>
 
             </div>

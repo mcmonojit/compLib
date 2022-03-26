@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Input | CoolWaterUI" />
+    <meta name="description" content="Rating | CoolWaterUI" />
     <meta name="author" content="Monojit Chakraborty"/>
     <title>CoolWaterUI</title>
-    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="rating.css">
 </head>
 <body>
     <div class="sidebar-and-main-container">
@@ -38,7 +38,7 @@
                     <a class="sidebar-item" href="../image/image.html" rel="noopener noreferrer">Image</a>
                 </li>
                 <li>
-                    <a class="sidebar-item  link-active" href="../input/input.html" rel="noopener noreferrer">Input</a>
+                    <a class="sidebar-item" href="../input/input.html" rel="noopener noreferrer">Input</a>
                 </li>
                 <li>
                     <a class="sidebar-item" href="../list/list.html" rel="noopener noreferrer">List</a>
@@ -47,7 +47,7 @@
                     <a class="sidebar-item" href="../navigation/navigation.html" rel="noopener noreferrer">Navigation</a>
                 </li>
                 <li>
-                    <a class="sidebar-item" href="../rating/rating.html" rel="noopener noreferrer">Rating</a>
+                    <a class="sidebar-item link-active" href="../rating/rating.html" rel="noopener noreferrer">Rating</a>
                 </li>
                 <li>
                     <a class="sidebar-item" href="../text/text.html" rel="noopener noreferrer">Text</a>
@@ -58,71 +58,40 @@
 
             <div class="main-content">
 
-                <h1>Input</h1>
-                <p>Input components are highly important for any application as they are used to obtain data from user.</p>
+                <h1>Rating</h1>
+                <p>Rating components are one of the significant elements as they convey a metric of measuring the credibility of an item.</p>
 
-                <h3>Primary Input</h3>
-                <p>This is a basic input with label.</p>
-
-                <div class="component-container">
-                    <div class="input-primary">
-                        <label>Name</label>
-                        <input type="text" placeholder="Enter your name" />
-                    </div>
-                </div>
-
-                <p>The following code snippet contains the code for the above components.</p>
-
-                <div class="component-container code-snip-width">
-                    <iframe
-                        src="https://carbon.now.sh/embed/ayH9ZJhqakBhhVqcWdK7"
-                        style="width: 614px; height: 261px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-
-                <h3>Input with validity check</h3>
-                <p>This component is widely used to check and validify. The consequent message is shown as an alert</p>
-
-                <div class="component-container comp-container-width1">
-                    <div>
-                        <div class="input-primary margin-1rem">
-                            <label>Enter a strong password</label>
-                            <input type="text" placeholder="Enter password" />
-                            <span class="check-success">It is a strong password</span>
-                        </div>
-
-                        <div class="input-primary margin-1rem">
-                            <label>Enter a strong password</label>
-                            <input type="text" placeholder="Enter password" />
-                            <span class="check-warning">It is a weak password!</span>
-                        </div>
-
-                        <div class="input-primary margin-1rem">
-                            <label>Enter correct password</label>
-                            <input type="text" placeholder="Enter password" />
-                            <span class="check-error">Incorrect password!</span>
-                        </div>
-                    </div>
-                </div>
-
-                <p>The following code snippet contains the code for the above components.</p>
-
-                <div class="component-container code-snip-width">
-                    <iframe
-                        src="https://carbon.now.sh/embed/kh6r03h4o4b0CfwlUyQk"
-                        style="width: 820px; height: 503px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
-                    </iframe>
-                </div>
-
-                <h3>Primary Textbox</h3>
-                <p>This is a basic Textbox with label.</p>
+                <h3>Basic rating</h3>
+                <p>This is a basic rating component.</p>
 
                 <div class="component-container">
-                    <div class="textbox-primary">
-                        <label>Name</label>
-                        <textarea rows="4" cols="40" placeholder="Enter text here"></textarea>
+
+                    <div class="rating-container red">
+                        <span>1</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                    </div>
+
+                    <div class="rating-container yellow">
+                        <span>2.5</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                    </div>
+
+                    <div class="rating-container green">
+                        <span>4</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                    </div>
+
+                    <div class="rating-container green">
+                        <span>4.8</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
                     </div>
                 </div>
 
@@ -130,10 +99,10 @@
 
                 <div class="component-container code-snip-width">
                     <iframe
-                        src="https://carbon.now.sh/embed/xncuRHMMfQJn8H2qyM8S"
-                        style="width: 614px; height: 279px; border:0; transform: scale(1); overflow:hidden;"
+                        src="https://carbon.now.sh/embed/O0M0dOiYg9kdOOYWPEUj"
+                        style="width: 1024px; height: 1005px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                        </iframe>
                 </div>
 
             </div>

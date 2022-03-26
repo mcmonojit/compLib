@@ -32,7 +32,7 @@
     background-color: var(--lightWaterBlue);
 }
 
-.btn-black{
+.btn-dark{
     color: var(--white);
     background-color: var(--darkBlack);
 }  
@@ -64,7 +64,7 @@
 
 .btn-outlined-black:hover{
     background-color: var(--lightGray);
-    color: var(--lightBlack);
+    color: var(--lightShadeOfBlack);
 }
 
 .btn-text{
@@ -81,7 +81,7 @@
 }
 
 .btn-text:hover{
-    color: var(--lightBlack);
+    color: var(--lightShadeOfBlack);
 }
   
 .btn-text:focus {
@@ -129,7 +129,7 @@
 }
 
 .btn-icon svg{
-    color: var(--lightBlack);
+    color: var(--lightShadeOfBlack);
 }
 
 .btn-fab{

@@ -28,9 +28,20 @@
     --text-color: #f5f5f5;
     --notification: #581c87;
 
+    --cardShadow: #9ca3af;
+
 
     --lightShadeOfBlack: #303030;
     --darkBlack: #000;
     --lightWaterBlue: #194975;
     --lightShadeOfGrey: #e5e5e5;
+    --ratingGreen: #16a34a;
+    --ratingRed: #ef4444;
+    --ratingYellow: #d97706;
+    --graytext: #9ca3af;
+    --listItemBG: #ffffff;
+
+    --checkSuccess: #16a34a;
+    --checkWarning: #d97706;
+    --checkError:#ef4444;
 }

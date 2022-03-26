@@ -1,0 +1,36 @@
+@import url(../colorVariables.css);
+
+@import url(../utils.css);
+
+.rating-container{
+    margin: 1rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.rating-container svg{
+    height: 0.8rem;
+    width: 0.8rem;
+    color: var(--white);
+}
+
+.rating-container span{
+    color: var(--white);
+    font-weight: 600;
+    font-size: 00.8rem;
+    padding-right: 0.2rem;
+}
+
+.green{
+    background-color: var(--ratingGreen);
+}
+
+.red{
+    background-color: var(--ratingRed);
+}
+
+.yellow{
+    background-color: var(--ratingYellow);
+}
