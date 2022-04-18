@@ -1,170 +1,302 @@
 /* font - quicksand */
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
 
 /* font - poppins  */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 @import url(./css/colorVariables.css);
 
+@import url(https://complib.netlify.app/css/allcomponent.css);
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-body{
-    font-family: 'Quicksand', sans-serif;
-    margin: 0px;
-    height: 100vh;
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0px;
+  height: 100vh;
+
+  /* prevent any overflow due to the slideout of hamburger menu*/
+  overflow-x: hidden;
 }
 
-.navbar-container{
-    background-color: var(--offWhite);
-    box-shadow: 2px 2px 12px -4px rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
+.navbar-container {
+  background-color: var(--offWhite);
+  box-shadow: 2px 2px 12px -4px rgba(0, 0, 0, 0.4);
+  /* display: flex; */
+  /* justify-content: center; */
 }
 
-.navbar{
-    margin: auto;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
+.navbar {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
-.navbar-brand{
-    margin: auto 0.75rem;
-    font-size: 2.5rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    background-image: linear-gradient(90deg, var(--violet), var(--turquoise));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+.navbar .nav-leftside {
+  flex: 50%;
+  display: flex;
+  justify-content: left;
+}
+.navbar .nav-rightside {
+  flex: 50%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
-.nav-list{
-    display: inline;
-    list-style: none;
-    letter-spacing: 2px;
+.navbar-brand {
+  margin: auto 0.75rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background-image: linear-gradient(90deg, var(--violet), var(--turquoise));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-.nav-item{
-    display: inline;
-    padding: 0rem 0.5rem;
+.nav-list {
+  display: none;
+  list-style: none;
+  padding: 0;
+  letter-spacing: 2px;
 }
 
-.nav-link{
-    text-decoration: none;
-    text-align: center;
-    color: var(--violet);
-    font-weight: bolder;
+.nav-item {
+  display: inline;
+  padding: 0rem 0.5rem;
 }
 
-.container-center{
-    min-height: calc(100vh - 352px);
-    padding: 2rem;
-    width: 90%;
-    margin: auto;
+.nav-link {
+  text-decoration: none;
+  text-align: center;
+  color: var(--violet);
+  font-weight: bolder;
 }
 
-.footer{
-    padding: 1rem 2rem;
-    color: beige;
-    background-color: var(--waterBlue);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.hamburger {
+  user-select: none;
+  border: none;
+  padding: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  appearance: none;
 }
 
-.footer-about{
-    padding: 0rem 2rem;
-    max-width: 460px;
-    margin: 1rem 2rem;
+.hamburger span {
+  display: block;
+  background-color: var(--violet);
+  width: 1.6rem;
+  height: 0.25rem;
+  border-radius: 0.3rem;
+  margin-top: 0.3rem;
+
+  transform-origin: 0 0;
+  transition: 0.3s;
 }
 
-.footer-about .copyright{
-    margin-top: 2rem;
-    color: var(--gray);
-    font-weight: 500;
+.hamburger.is-active span:nth-child(1) {
+  transform: translateX(2.4px) rotate(45deg);
 }
 
-.brand-line{
-    font-size: 1.75rem;
-    font-weight: 500;
-    color: var(--veryLightGray);
+.hamburger.is-active span:nth-child(2) {
+  background-color: transparent;
 }
 
-
-.footer-about span{
-    font-size: 1.9rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    background-image: linear-gradient(90deg, var(--violet), var(--turquoise));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+.hamburger.is-active span:nth-child(3) {
+  transform: translateY(0.5px) rotate(-45deg);
 }
 
-.newsletter{
-    margin-top: 1.75rem;
+.container-center {
+  min-height: calc(100vh - 349px);
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
 }
 
-.newsletter p{
-    color: var(--veryLightGray);
-    font-weight: 600;
+.link-text-container {
+  padding: 0.6rem;
+  background-color: var(--offWhite);
+  border-radius: 0.4rem;
+  max-width: 45rem;
+  overflow: auto;
 }
 
-.newsletter label{
-    margin-bottom: 0.5rem;
-    font-size: 11px;
-    color: var(--gray);
-    font-weight: bold;
+.footer {
+  padding: 1rem 2rem;
+  color: beige;
+  background-color: var(--waterBlue);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-about {
+  padding: 0rem 2rem;
+  max-width: 460px;
+  margin: 1rem 2rem;
+}
+
+.footer-about .copyright {
+  margin-top: 2rem;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.brand-line {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--veryLightGray);
+}
+
+.footer-about span {
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background-image: linear-gradient(90deg, var(--violet), var(--turquoise));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.newsletter {
+  margin-top: 1.75rem;
+}
+
+.newsletter p {
+  color: var(--veryLightGray);
+  font-weight: 600;
+}
+
+.newsletter label {
+  margin-bottom: 0.5rem;
+  font-size: 0.6rem;
+  color: var(--gray);
+  font-weight: bold;
+  display: block;
+}
+
+.newsletter-input input {
+  border: none;
+  outline: none;
+  max-width: 10rem;
+  font-size: 0.8rem;
+  background-color: var(--offWhite);
+  padding: 00.25rem;
+}
+
+.newsletter-input {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-input button {
+  padding: 0.2rem;
+  font-size: 0.8rem;
+}
+
+/* .newsletter-input button:hover {
+  background-color: var(--gray);
+  cursor: pointer;
+} */
+
+svg {
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+
+.social-icons {
+  width: 12rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.component-container iframe {
+  width: 833px;
+  height: 279px;
+  /* width: 20rem;
+  height: auto; */
+  border: 0;
+  transform: scale(1);
+  /* overflow: hidden; */
+  /* overflow-y: scroll;
+  overflow-x: scroll; */
+}
+
+@media (min-width: 53rem) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-list {
     display: block;
+  }
 }
 
-.newsletter-input input{
-    border: none;
-    outline: none;
-    background-color: var(--offWhite);
-    padding: 00.25rem;
-}
+@media (max-width: 52.999rem) {
+  .nav-rightside {
+    position: fixed;
+    inset: 0 0 0 20%;
+    padding: 5rem 6rem 0rem 0rem;
+    background: hsl(0, 0%, 0%, 0.6);
+    backdrop-filter: blur(0.4rem);
 
-.newsletter-input{
-    background-color: var(--offWhite);
-    padding: 0rem 0rem 0rem 0.25rem;
-    border-radius: 0.35rem;
-}
+    transform: translateX(100%);
 
-.newsletter-input button{
-    display: inline;
-    padding: 0.5rem;
-    border-radius: 0rem 0.35rem 0.35rem 0rem;
-    background-color: var(--veryLightGray);
-    border: none;
-}
-
-.newsletter-input button:hover{
-    background-color: var(--gray);
-    cursor: pointer;
-}
-
-svg{
-    color: white;
-    width: 20px;
-    height: 20px;
-}
-
-.social-icons{
-    width: 12rem;
-    margin: 1rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  .nav-list {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 1.8rem;
+    height: 100%;
+  }
+
+  .hamburger {
+    position: absolute;
+    z-index: 10;
+    top: 1.25rem;
+    right: 1.8rem;
+  }
+
+  .nav-rightside[data-visible="true"] {
+    transform: translateX(0%);
+  }
+}
+
+@media (max-width: 40rem) {
+  .copyright {
+    font-size: 0.9rem;
+  }
+
+  .newsletter-input input {
+    max-width: 8rem;
+  }
+
+  .newsletter-input button {
+    /* padding: 0.25rem; */
+    display: inline;
+    font-size: 0.8rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
 }
