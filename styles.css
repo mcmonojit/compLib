@@ -230,18 +230,6 @@ svg {
   justify-content: space-evenly;
 }
 
-.component-container iframe {
-  width: 833px;
-  height: 279px;
-  /* width: 20rem;
-  height: auto; */
-  border: 0;
-  transform: scale(1);
-  /* overflow: hidden; */
-  /* overflow-y: scroll;
-  overflow-x: scroll; */
-}
-
 @media (min-width: 53rem) {
   .hamburger {
     display: none;

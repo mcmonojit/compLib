@@ -39,13 +39,11 @@ h3 {
 
 .docs-navbrand-container {
   background-color: var(--waterBlue);
-  padding: 1.8rem 0.5rem 1rem 0.5rem;
-  text-align: center;
+  padding: 2rem 1rem 2rem 1.85rem;
 }
 
 .navbar-brand {
   font-family: "Quicksand", sans-serif;
-  margin: auto 0.75rem;
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -65,7 +63,8 @@ h3 {
 }
 
 .sidebar ul {
-  padding: 0rem 0rem 1rem 0.85rem;
+  margin: 0rem;
+  padding: 0rem 0rem 1rem 1rem;
   letter-spacing: 1.5px;
   list-style-type: none;
 }
@@ -100,6 +99,44 @@ h3 {
   scroll-behavior: smooth;
 }
 
+.navbar {
+  max-width: 95%;
+}
+
+.hamburger {
+  user-select: none;
+  border: none;
+  padding: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+.hamburger span {
+  display: block;
+  background-color: var(--violet);
+  width: 1.6rem;
+  height: 0.25rem;
+  border-radius: 0.3rem;
+  margin-top: 0.3rem;
+
+  transform-origin: 0 0;
+  transition: 0.3s;
+}
+
+.hamburger.is-active span:nth-child(1) {
+  transform: translateX(2.4px) rotate(45deg);
+}
+
+.hamburger.is-active span:nth-child(2) {
+  background-color: transparent;
+}
+
+.hamburger.is-active span:nth-child(3) {
+  transform: translateY(0.5px) rotate(-45deg);
+}
+
 .main-content {
   padding: 4rem;
   font-size: 1.1rem;
@@ -108,13 +145,28 @@ h3 {
 .component-container {
   border: 0.25px solid var(--gray);
   border-radius: 0.75rem;
-  padding: 2rem;
+  padding: 2rem 0.5rem;
   margin: 2rem 0rem 3rem 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: auto;
+  width: 100%;
   height: fit-content;
+}
+
+iframe {
+  height: 100%;
+}
+
+.code-snippet {
+  border: 0.25px solid var(--gray);
+  border-radius: 0.75rem;
+  padding: 2rem 0.5rem;
+  margin: 2rem 0rem 3rem 0rem;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  width: 100%;
 }
 
 .inline-block {
@@ -185,4 +237,51 @@ svg {
   margin: 1rem;
   display: flex;
   justify-content: space-evenly;
+}
+
+/**********************/
+
+@media (max-width: 27rem) {
+  .main-content {
+    padding: 2rem;
+    font-size: 1rem;
+  }
+
+  .code-snippet {
+    width: 100%;
+    display: block;
+    height: fit-content;
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 48rem) {
+  .sidebar {
+    position: fixed;
+    z-index: 10;
+    inset: 0 70% 0 0;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease-in-out;
+  }
+
+  .code-snippet {
+    width: 100%;
+    display: block;
+    height: fit-content;
+    overflow-x: scroll;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  .sidebar[data-visible="true"] {
+    transform: translateX(0%);
+  }
+}
+
+@media (min-width: 48.001rem) {
+  .main-and-footer-container .navbar {
+    display: none;
+  }
 }

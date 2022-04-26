@@ -1,148 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 @import url(../colorVariables.css);
 
 .btn {
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    display: inline-block;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  display: inline-block;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .btn:focus {
-    outline: none;
+  outline: none;
 }
-  
+
 .btn:active {
-    transform: scale(0.97);
+  transform: scale(0.97);
 }
 
-.btn-primary{
-    color: var(--white);
-    background-color: var(--waterBlue);
+.btn-primary {
+  color: var(--white);
+  background-color: var(--waterBlue);
 }
 
-.btn-primary:hover{
-    background-color: var(--lightWaterBlue);
+.btn-primary:hover {
+  background-color: var(--lightWaterBlue);
 }
 
-.btn-dark{
-    color: var(--white);
-    background-color: var(--darkBlack);
-}  
-
-.btn-black:hover{
-    background-color: var(--charcoalBlack);
+.btn-dark {
+  color: var(--white);
+  background-color: var(--darkBlack);
 }
 
-.btn-outlined{
-    font-weight: 500;
-    color: var(--waterBlue);
-    background-color: var(--white);
-    border: 2px solid var(--waterBlue);
-    padding: 8px 18px;
+.btn-black:hover {
+  background-color: var(--charcoalBlack);
 }
 
-.btn-outlined:hover{
-    background-color: var(--lightGray);
-    color: var(--lightWaterBlue);
+.btn-outlined {
+  font-weight: 500;
+  color: var(--waterBlue);
+  background-color: var(--white);
+  border: 2px solid var(--waterBlue);
+  padding: 8px 18px;
 }
 
-.btn-outlined-black{
-    font-weight: 500;
-    color: var(--darkBlack);
-    background-color: var(--white);
-    border: 2px solid var(--darkBlack);
-    padding: 8px 18px;
+.btn-outlined:hover {
+  background-color: var(--lightGray);
+  color: var(--lightWaterBlue);
 }
 
-.btn-outlined-black:hover{
-    background-color: var(--lightGray);
-    color: var(--lightShadeOfBlack);
+.btn-outlined-black {
+  font-weight: 500;
+  color: var(--darkBlack);
+  background-color: var(--white);
+  border: 2px solid var(--darkBlack);
+  padding: 8px 18px;
 }
 
-.btn-text{
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--darkBlack);
-    display: inline-block;
-    background: none;
-    border: none;
-    margin: 5px;
-    cursor: pointer;
-    text-decoration: none;
+.btn-outlined-black:hover {
+  background-color: var(--lightGray);
+  color: var(--lightShadeOfBlack);
 }
 
-.btn-text:hover{
-    color: var(--lightShadeOfBlack);
+.btn-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--darkBlack);
+  display: inline-block;
+  background: none;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  text-decoration: none;
 }
-  
+
+.btn-text:hover {
+  color: var(--lightShadeOfBlack);
+}
+
 .btn-text:focus {
-    outline: none;
+  outline: none;
 }
-  
+
 .btn-text:active {
-    transform: scale(0.98);
+  transform: scale(0.98);
 }
 
-.btn-link{
-    text-decoration: none;
-    color: inherit;
+.btn-link {
+  text-decoration: none;
+  color: inherit;
 }
 
-.btn-icon-label{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.btn-icon-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.btn-icon-label label{
-    margin-right: 5px;
-    cursor: inherit;
+.btn-icon-label label {
+  margin-right: 5px;
+  cursor: inherit;
 }
 
-.btn-icon-label svg{
-    color: var(--white);
-    cursor: inherit;
+.btn-icon-label svg {
+  color: var(--white);
+  cursor: inherit;
 }
 
-.btn-icon{ 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--offWhite);
-    margin: 5px;
-    padding: 10px;
-    border-radius: 50%;
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--offWhite);
+  margin: 5px;
+  padding: 10px;
+  border-radius: 50%;
 }
 
-.btn-icon:hover{
-    color: var(--lightWaterBlue);
-    background-color: var(--lightShadeOfGrey);
+.btn-icon:hover {
+  /* color: var(--lightWaterBlue); */
+  background-color: var(--lightShadeOfGrey);
 }
 
-.btn-icon svg{
-    color: var(--lightShadeOfBlack);
+.btn-icon svg {
+  color: var(--lightShadeOfBlack);
 }
 
-.btn-fab{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
-    padding: 10px;
-    background-color: var(--waterBlue);
-    border-radius: 50%;
-    box-shadow: 1px 2px 4px 2px var(--gray);
+.btn-icon:active {
+  transform: scale(0.95);
 }
 
-.btn-fab svg{
-    color: var(--white);
+.btn-fab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 10px;
+  background-color: var(--waterBlue);
+  border-radius: 50%;
+  box-shadow: 1px 2px 4px 2px var(--gray);
+}
+
+.btn-fab svg {
+  color: var(--white);
 }
