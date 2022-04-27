@@ -1,2 +1,10 @@
 @import url(../docs.css);
 @import url(/css/allcomponent.css);
+
+.avatar-mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: fit-content;
+  overflow-x: scroll;
+}

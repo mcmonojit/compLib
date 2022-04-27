@@ -99,10 +99,6 @@ h3 {
   scroll-behavior: smooth;
 }
 
-.navbar {
-  max-width: 95%;
-}
-
 .hamburger {
   user-select: none;
   border: none;
@@ -134,7 +130,7 @@ h3 {
 }
 
 .hamburger.is-active span:nth-child(3) {
-  transform: translateY(0.5px) rotate(-45deg);
+  transform: translateY(0.6px) rotate(-45deg);
 }
 
 .main-content {
